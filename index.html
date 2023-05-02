@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge ONE - Encriptador de texto</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-1">Encriptador de texto</h1>
+        <h2 class="titulo-2">Proyecto Desarrollado Para El Programa ONE - Oracle Next Education - De Oracle <br> Junto a
+            Alura Latam.</h2>
+    </header>
+    <br>
+
+    <div class="container">
+        <article class="logo">
+        <img src="Imagenes/Logo.png"  alt="Logo de la pagina" />
+        <img src="Imagenes/letraL.png"  alt="Logo de la pagina 2" />
+        </article>
+        <br>
+        <main class="main">
+
+            <div class="encriptador">
+                <textarea name="text" class="text" id="text"
+                    placeholder="Ingrese el texto que desea encriptar aqui"></textarea>
+                <br>
+                <i class="bi bi-exclamation-circle-fill" id="icono-advertencia"> Solo letras minúsculas y sin
+                    acentos</i>
+                <br>
+                <button class="encriptar" id="encrypt" onclick="encrypt()">Encriptar</button>
+                <button class="desencriptar" id="decrypt" onclick="decrypt()">Desencriptar</button>
+            </div>
+
+            <div class="resultado">
+                <div class="contenidoResultado">
+                    <img class="imagen-muñeco" id="imagen-muñeco" src="Imagenes/Muñeco.svg" alt="Muñeco" />
+                    <br>
+                    <textarea for="textencrypt" class="titulo-resultado"
+                        id="textencrypt">Ningun mensaje fue encontrado</textarea>
+                    <textarea for="textdecrypt" class="parrafo-resultado"
+                        id="textdecrypt">Ingree el texto que desea encriptar/desencriptar</textarea>
+                </div>
+                <div class="botonesMoverYCopiar" id="botonesMoverYCopiar">
+                    <button class="btn-copy" onclick="clickToCopy(textencrypt)">Copiar</button>
+                    <button class="btn-move" id="moveValue">Mover</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="sitio">Sitio desarrollado con:</p>
+            <img src="Imagenes/html.png" alt="Logo HTML" class="imagen-footer" />
+            <img src="Imagenes/css.png" alt="Logo CSS" class="imagen-footer" />
+            <img src="Imagenes/js.png" alt="Logo JavaScript" class="imagen-footer" />
+            <img src="Imagenes/bootstrap.png" alt="Logo Boostrap" class="imagen-footer" /><br>
+            <a href="https://github.com/YacoAngeleri" class="icono-footer"><i class="bi bi-github">GitHub</i></a>
+            <a href="https://www.linkedin.com/in/tomas-yaco-angeleri-6871ba26a" class="icono-footer"><i
+                    class="bi bi-linkedin">Linkedin</i></a>
+            <a href="mailto:yacoang@gmail.com" class="icono-footer"><i class="bi bi-envelope-fill">E-mail</i></a>
+            <p class="derechos">© April 2023 made by <a class="nombre"
+                    href="https://www.linkedin.com/in/tomas-yaco-angeleri-6871ba26a"> Tomas Yaco Angeleri.</a> All
+                Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+<script src="JS/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</html>
