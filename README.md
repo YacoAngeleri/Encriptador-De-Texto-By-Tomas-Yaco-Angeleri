@@ -1,0 +1,1 @@
+Este proyecto fue realizado durante el mes de Abril del 2023 como parte del primer challenge del curso de programacion de Alra Latam junto a One Oracle.
