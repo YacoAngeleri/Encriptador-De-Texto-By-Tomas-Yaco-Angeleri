@@ -28,15 +28,15 @@ function encrypt() {
 
   for (let i = 0; i < texto_array.length; i++) {
     if (texto_array[i] == "a"){
-        texto_array[i] = "ai"
+        texto_array[i] = "ai";
     } else if(texto_array[i] == "e"){
-        texto_array[i] = "enter"
+        texto_array[i] = "enter";
     } else if(texto_array[i] == "i"){
-        texto_array[i] = "imes"
+        texto_array[i] = "imes";
     } else if(texto_array[i] == "o"){
-        texto_array[i] = "ober"
+        texto_array[i] = "ober";
     } else if(texto_array[i] == "u"){
-        texto_array[i] = "ufat"
+        texto_array[i] = "ufat";
     } else {
         continue;
     }
