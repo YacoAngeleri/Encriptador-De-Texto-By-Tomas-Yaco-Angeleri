@@ -14,21 +14,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <header>
-        <h1 class="titulo-1">Encriptador de texto</h1>
-        <h2 class="titulo-2">Proyecto Desarrollado Para El Programa ONE - Oracle Next Education - De Oracle <br> Junto a
+        <h1 class="titulo-1" id="titulo-1">Encriptador de texto</h1>
+        <div class="container-btn-mode" id="container-btn-mode">
+            <div id="id-sun" class="btn-mode sun active">
+                <i class="bi bi-sun"></i>
+            </div>
+            <div id="id-moon" class="btn-mode moon">
+                <i class="bi bi-moon-stars-fill"></i>
+            </div>
+        </div>
+        <h2 class="titulo-2" id="titulo-2">Proyecto Desarrollado Para El Programa ONE - Oracle Next Education - De
+            Oracle <br> Junto a
             Alura Latam.</h2>
+
     </header>
     <br>
 
     <div class="container">
         <article class="logo">
-        <img src="Imagenes/Logo.png"  alt="Logo de la pagina">
-        <img src="Imagenes/letraL.png"  alt="Logo de la pagina 2">
+            <img src="Imagenes/Logo.png" alt="Logo de la pagina">
+            <img src="Imagenes/letraL.png" alt="Logo de la pagina 2">
         </article>
         <br>
-        <main class="main">
+        <main class="main" id="main">
 
             <div class="encriptador">
                 <textarea name="text" class="text" id="text"
@@ -41,32 +51,34 @@
                 <button class="desencriptar" id="decrypt" onclick="decrypt()">Desencriptar</button>
             </div>
 
-            <div class="resultado">
+            <div class="resultado" id="resultado">
                 <div class="contenidoResultado">
                     <img class="imagen-muñeco" id="imagen-muñeco" src="Imagenes/Muñeco.svg" alt="Muñeco">
                     <br>
                     <textarea for="textencrypt" class="titulo-resultado"
                         id="textencrypt">Ningun mensaje fue encontrado</textarea>
                     <textarea for="textdecrypt" class="parrafo-resultado"
-                        id="textdecrypt">Ingree el texto que desea encriptar/desencriptar</textarea>
+                        id="textdecrypt">Ingrese el texto que desea encriptar/desencriptar</textarea>
                 </div>
                 <div class="botonesMoverYCopiar" id="botonesMoverYCopiar">
-                    <button class="btn-copy" onclick="clickToCopy(textencrypt)">Copiar</button>
+                    <button class="btn-copy" id="btn-copy" onclick="clickToCopy(textencrypt)">Copiar</button>
                     <button class="btn-move" id="moveValue">Mover</button>
                 </div>
             </div>
         </main>
-        <footer>
-            <p class="sitio">Sitio desarrollado con:</p>
+        <footer id="footer">
+            <p class="sitio" id="sitio">Sitio desarrollado con:</p>
             <img src="Imagenes/html.png" alt="Logo HTML" class="imagen-footer">
             <img src="Imagenes/css.png" alt="Logo CSS" class="imagen-footer">
             <img src="Imagenes/js.png" alt="Logo JavaScript" class="imagen-footer">
             <img src="Imagenes/bootstrap.png" alt="Logo Boostrap" class="imagen-footer"><br>
-            <a href="https://github.com/YacoAngeleri" class="icono-footer"><i class="bi bi-github">GitHub</i></a>
-            <a href="https://www.linkedin.com/in/tomas-yaco-angeleri-6871ba26a" class="icono-footer"><i
-                    class="bi bi-linkedin">Linkedin</i></a>
-            <a href="mailto:yacoang@gmail.com" class="icono-footer"><i class="bi bi-envelope-fill">E-mail</i></a>
-            <p class="derechos">© April 2023 made by <a class="nombre"
+            <a href="https://github.com/YacoAngeleri" class="icono-footer" id="icono-footer-1"><i class="bi bi-github">
+                    GitHub</i></a>
+            <a href="https://www.linkedin.com/in/tomas-yaco-angeleri-6871ba26a" class="icono-footer"
+                id="icono-footer-2"><i class="bi bi-linkedin"> Linkedin</i></a>
+            <a href="mailto:yacoang@gmail.com" class="icono-footer" id="icono-footer-3"><i class="bi bi-envelope-fill">
+                    E-mail</i></a>
+            <p class="derechos" id="derechos">© April 2023 made by <a class="nombre" id="nombre"
                     href="https://www.linkedin.com/in/tomas-yaco-angeleri-6871ba26a"> Tomas Yaco Angeleri.</a> All
                 Rights Reserved.</p>
         </footer>
